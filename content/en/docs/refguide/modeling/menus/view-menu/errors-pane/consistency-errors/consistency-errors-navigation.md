@@ -52,7 +52,7 @@ For example, you have added a data view that expects an object of type *Customer
 
 {{< figure src="/attachments/refguide/modeling/menus/view-menu/errors-pane/consistency-errors/consistency-errors-navigation/home-page-error.png" alt="Home Page Error" >}}
 
-You can fix this error by creating a microflow that will that will create a new *Customer* object and pass it to the page. Do the following:
+You can fix this error by creating a microflow that will create a new *Customer* object and pass it to the page. Do the following:
 
 1. Open the responsive navigation profile.
 2. In **Default home page field** click **Select**.
