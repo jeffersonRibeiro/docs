@@ -63,7 +63,7 @@ When an event is triggered, you can choose what action is triggered. Possible op
 * [Save changes](#save-changes) 
 * [Cancel changes](#cancel-changes) 
 * [Close page](#close-page) 
-* [Delete](#delete) 
+* [Delete object(s)](#delete-objects) 
 * [Synchronize](#synchronize) 
 * [Sign out](#sign-out) 
 * [Call workflow](#call-workflow)
@@ -264,9 +264,15 @@ Set the **Close page** property to indicate whether the current page should be c
 
 The **Close page** event closes a pop-up window (for pop-up pages) or navigates to the previously visited page (for content pages).
 
-### 3.10 Delete {#delete}
+### 3.10 Delete object(s) {#delete-objects}
 
-The **Delete event** deletes an object. Its behavior depends on a data container it is placed in. When placed in a data view, deletes the connected object; it does not delete objects in a nested data view unless configured through delete behavior. When placed in a data grid, template grid, or reference set selector control bar, it deletes the selected object(s). When placed inside a list view, it deletes the corresponding list view item.
+When placed in the control bar of a data grid, template grid, or reference set selector it will delete the selected object(s).
+
+In other situations, the user can select which object(s) to delete. It can be any surrounding data container, snippet parameter, page parameter or selections of pluggable widgets (e.g. data grid 2 or gallery widget).
+
+{{% alert color="info" %}}
+The option to configure which object(s) to delete was introduced in Studio Pro 10.4.0.
+{{% /alert %}}
 
 This event cannot be used to delete [external objects](/refguide/external-entities/). Use a microflow with a [Delete External Object](/refguide/delete-external-object/) activity to delete external objects.
 
